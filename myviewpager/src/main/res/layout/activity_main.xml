@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bannerFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--viewpager-->
+    <cn.youngkaaa.myviewpager.YViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:circulationCount="600"
+        app:circulatory="true"
+        app:orientation="horizontal" />
+
+    <!--右下角的圆形指示器 即 1/5 1/3 之类的那些-->
+    <TextView
+        android:id="@+id/numIndicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/circle_selected"
+        android:gravity="center"
+        android:text="1/5"
+        android:textColor="#ffffff"
+        android:visibility="visible" />
+</FrameLayout>
+
